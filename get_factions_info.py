@@ -131,7 +131,7 @@ def find_factions_files(base_folder):
 
     return factions_files
 
-def process_factions(factions_files, name_map, exclude_patterns, output_folder):
+def process_factions(factions_files, name_map, output_folder):
     """Process all factions.xml files and write to factions_output.csv with resolved names."""
     all_rows = []
 
@@ -169,12 +169,6 @@ def process_factions(factions_files, name_map, exclude_patterns, output_folder):
                 prefixname = resolve_placeholders(prefixname_ref, name_map)
                 spacename = resolve_placeholders(spacename_ref, name_map)
                 homespacename = resolve_placeholders(homespacename_ref, name_map)
-
-                # Apply exclusion patterns if necessary (currently not used, can be adjusted)
-                macro = f"id_{faction_id}"
-                if any(re.match(pattern, macro) for pattern in exclude_patterns):
-                    logger.info(f"Excluded faction '{faction_id}' from '{factions_file}' based on exclusion patterns.")
-                    continue
 
                 # Append the row
                 all_rows.append({
@@ -220,21 +214,18 @@ def get_base_folder():
     """Get base folder from args or user input"""
     parser = argparse.ArgumentParser(description='Process X4 factions data')
     parser.add_argument('folder', nargs='?', help='Base folder containing libraries and extensions subdirectories')
-    parser.add_argument('--exclude-macro-regex', nargs='*', default=DEFAULT_EXCLUDE_PATTERNS,
-                        help='Regular expression patterns to exclude factions based on ID')
     parser.add_argument('--output-folder', default=DEFAULT_OUTPUT_FOLDER, help='Folder to store the output CSV files')
     args = parser.parse_args()
 
     if args.folder:
         base_folder = args.folder.strip()
-        exclude_patterns = [pattern.strip() for pattern in args.exclude_macro_regex]
-        return base_folder, exclude_patterns, args.output_folder
+        return base_folder, args.output_folder
 
     # If no argument provided, ask for input
     while True:
         folder = input("Please enter the path to X4 game folder: ").strip('" ').strip()
         if os.path.isdir(folder):
-            return folder, DEFAULT_EXCLUDE_PATTERNS, DEFAULT_OUTPUT_FOLDER
+            return folder, DEFAULT_OUTPUT_FOLDER
         print("Invalid folder path. Please try again.")
 
 def validate_folder_structure(base_folder):
@@ -252,7 +243,7 @@ def validate_folder_structure(base_folder):
 
 def main():
     try:
-        base_folder, exclude_patterns, output_folder = get_base_folder()
+        base_folder, output_folder = get_base_folder()
         libraries_path, extensions_path = validate_folder_structure(base_folder)
 
         # Path to localization file
@@ -267,7 +258,7 @@ def main():
 
         # Process factions.xml files with exclusion patterns
         if factions_files:
-            process_factions(factions_files, name_map, exclude_patterns, output_folder)
+            process_factions(factions_files, name_map, output_folder)
         else:
             logger.warning("No factions.xml files to process")
 

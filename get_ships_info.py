@@ -10,6 +10,9 @@ import re
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
+# Define default output folder
+DEFAULT_OUTPUT_FOLDER = 'output'
+
 def find_ships_files(base_folder):
     """
     Find all ships.xml files within the base_folder and its subdirectories.
@@ -43,7 +46,7 @@ def find_ships_files(base_folder):
 
     return ships_files
 
-def process_ships(ships_files):
+def process_ships(ships_files, output_folder):
     """
     Process all ships.xml files and write to ships_output.csv with id, group, size, source,
     and dynamic columns for factions and tags.
@@ -117,8 +120,11 @@ def process_ships(ships_files):
     # Define CSV columns with enclosed names
     csv_columns = ['id', 'group', 'size', 'source'] + sorted_factions + sorted_tags
 
+    # Define output file path
+    output_path = os.path.join(output_folder, 'ships_output.csv')
+
     try:
-        with open('ships_output.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
             writer.writeheader()
 
@@ -159,29 +165,21 @@ def process_ships(ships_files):
         logger.error(f"Unexpected error while writing CSV: {e}")
 
 def get_base_folder():
-    """
-    Parse command-line arguments or prompt user for the base folder containing ships data.
-
-    Returns:
-        str: Path to the base game folder
-    """
+    """Get base folder from args or user input"""
     parser = argparse.ArgumentParser(description='Process X4 ships data')
-    parser.add_argument('folder', nargs='?', help='Base folder containing ships subdirectories')
+    parser.add_argument('folder', nargs='?', help='Base folder containing libraries and extensions subdirectories')
+    parser.add_argument('--output-folder', default=DEFAULT_OUTPUT_FOLDER, help='Folder to store the output CSV files')
     args = parser.parse_args()
 
     if args.folder:
-        base_folder = args.folder.strip('" ').strip()
-        if os.path.isdir(base_folder):
-            return base_folder
-        else:
-            logger.error(f"Provided folder does not exist: {base_folder}")
-            sys.exit(1)
+        base_folder = args.folder.strip()
+        return base_folder, args.output_folder
 
     # If no argument provided, ask for input
     while True:
         folder = input("Please enter the path to X4 game folder: ").strip('" ').strip()
         if os.path.isdir(folder):
-            return folder
+            return folder, DEFAULT_OUTPUT_FOLDER
         print("Invalid folder path. Please try again.")
 
 def validate_folder_structure(base_folder):
@@ -207,7 +205,7 @@ def validate_folder_structure(base_folder):
 
 def main():
     try:
-        base_folder = get_base_folder()
+        base_folder, output_folder = get_base_folder()
         validate_folder_structure(base_folder)
 
         # Find all ships.xml files
@@ -215,7 +213,7 @@ def main():
 
         # Process ships.xml files
         if ships_files:
-            process_ships(ships_files)
+            process_ships(ships_files, output_folder)
         else:
             logger.warning("No ships.xml files to process")
 

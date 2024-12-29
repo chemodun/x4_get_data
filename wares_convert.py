@@ -12,6 +12,9 @@ logger = logging.getLogger(__name__)
 # Define valid transport types
 VALID_TRANSPORT = {'container', 'liquid', 'solid'}
 
+# Define default output folder
+DEFAULT_OUTPUT_FOLDER = 'output'
+
 def parse_name_reference(name_ref):
     """Parse name reference like {20201,401} into (page_id, t_id)"""
     if not name_ref:
@@ -75,18 +78,20 @@ def calculate_price_ranges(min_price, max_price):
 
 def get_base_folder():
     """Get base folder from args or user input"""
-    parser = argparse.ArgumentParser(description='Process X4 wares data')
-    parser.add_argument('folder', nargs='?', help='Base folder containing libraries and t subdirectories')
+    parser = argparse.ArgumentParser(description='Process X4 ships data')
+    parser.add_argument('folder', nargs='?', help='Base folder containing libraries and extensions subdirectories')
+    parser.add_argument('--output-folder', default=DEFAULT_OUTPUT_FOLDER, help='Folder to store the output CSV files')
     args = parser.parse_args()
 
     if args.folder:
-        return args.folder
+        base_folder = args.folder.strip()
+        return base_folder, args.output_folder
 
     # If no argument provided, ask for input
     while True:
-        folder = input("Please enter the path to X4 game folder: ").strip('"')
+        folder = input("Please enter the path to X4 game folder: ").strip('" ').strip()
         if os.path.isdir(folder):
-            return folder
+            return folder, DEFAULT_OUTPUT_FOLDER
         print("Invalid folder path. Please try again.")
 
 def validate_folder_structure(base_folder):
@@ -128,9 +133,20 @@ def find_wares_files(base_folder):
     logger.info(f"Found {len(wares_files)} wares.xml files")
     return wares_files
 
-def process_all_wares(wares_files, name_map):
+def process_all_wares(wares_files, name_map, output_folder):
+    # Ensure the output folder exists
+    if not os.path.exists(output_folder):
+        try:
+            os.makedirs(output_folder)
+            logger.info(f"Created output directory at: {output_folder}")
+        except Exception as e:
+            logger.error(f"Failed to create output directory '{output_folder}': {e}")
+            return
+    # Define output CSV file path
+    output_path = os.path.join(output_folder, 'trade_wares_with_prices.csv')
+
     """Process all wares.xml files keeping source information"""
-    with open('trade_wares_with_prices.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['name', 'min', 'max', 'avg',
                         '30% min', '30% max',
@@ -175,7 +191,7 @@ def process_all_wares(wares_files, name_map):
 
 def main():
     try:
-        base_folder = get_base_folder()
+        base_folder, output_folder = get_base_folder()
         wares_files = find_wares_files(base_folder)
         loc_path = os.path.join(base_folder, 't', '0001-l044.xml')
 
@@ -183,7 +199,7 @@ def main():
             raise FileNotFoundError("Localization file not found")
 
         name_map = load_localization(loc_path)
-        process_all_wares(wares_files, name_map)
+        process_all_wares(wares_files, name_map, output_folder)
         logger.info("Processing complete")
 
     except Exception as e:

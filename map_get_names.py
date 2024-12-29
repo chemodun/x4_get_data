@@ -13,6 +13,9 @@ logger = logging.getLogger(__name__)
 # Define default exclusion patterns
 DEFAULT_EXCLUDE_PATTERNS = [r'^timelines_map_', r'^demo_']
 
+# Define default output folder
+DEFAULT_OUTPUT_FOLDER = 'output'
+
 def parse_name_reference(name_ref):
     """Parse name reference like {20201,401} into (page_id, t_id)"""
     if not name_ref:
@@ -43,7 +46,9 @@ def load_localization(file_path):
                 if t_id:
                     # Create combined key: pageID_tID
                     key = f"{page_id}_{t_id}"
-                    name_map[key] = t.text
+                    name_map[key] = t.text.strip() if t.text else ''
+
+        logger.info(f"Loaded {len(name_map)} localization entries from {file_path}")
         return name_map
     except Exception as e:
         logger.error(f"Error loading localization: {e}")
@@ -146,9 +151,18 @@ def resolve_placeholders(text, name_map, processed_keys=None, max_depth=10):
 
     return resolved_text
 
-def process_mapdefaults(mapdefaults_files, name_map, exclude_patterns):
+def process_mapdefaults(mapdefaults_files, name_map, exclude_patterns, output_folder):
     """Process all mapdefaults.xml files and write to mapdefaults_output.csv sorted by cluster and sector."""
     all_rows = []
+
+# Ensure the output folder exists
+    if not os.path.exists(output_folder):
+        try:
+            os.makedirs(output_folder)
+            logger.info(f"Created output directory at: {output_folder}")
+        except Exception as e:
+            logger.error(f"Failed to create output directory '{output_folder}': {e}")
+            return
 
     for source, mapdefaults_file in mapdefaults_files:
         try:
@@ -195,8 +209,11 @@ def process_mapdefaults(mapdefaults_files, name_map, exclude_patterns):
     # Sort all_rows based on cluster_id and sector_id numerically
     all_rows.sort(key=lambda x: (x[0], x[1]))  # (cluster_id, sector_id)
 
+    # Define output CSV file path
+    output_path = os.path.join(output_folder, 'mapdefaults_output.csv')
+
     # Write to CSV including 'type'
-    with open('mapdefaults_output.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         # Headers including 'type'
         writer.writerow(['macro', 'name', 'source', 'type'])
@@ -207,22 +224,26 @@ def process_mapdefaults(mapdefaults_files, name_map, exclude_patterns):
 
 def get_base_folder():
     """Get base folder from args or user input"""
-    parser = argparse.ArgumentParser(description='Process X4 map defaults data')
-    parser.add_argument('folder', nargs='?', help='Base folder containing libraries and t subdirectories')
+    parser = argparse.ArgumentParser(description='Process X4 localization data')
+    parser.add_argument('folder', nargs='?', help='Base folder containing localization files')
+    parser.add_argument('--output-folder', default=DEFAULT_OUTPUT_FOLDER, help='Folder to store the output CSV files')
     parser.add_argument('--exclude-macro-regex', nargs='*', default=DEFAULT_EXCLUDE_PATTERNS,
-                        help='Regular expression patterns to exclude macros')
+                        help='Regular expression patterns to exclude entries based on ID')
     args = parser.parse_args()
 
-    if args.folder:
-        base_folder = args.folder.strip()
-        exclude_patterns = [pattern.strip() for pattern in args.exclude_macro_regex]
-        return base_folder, exclude_patterns
+    base_folder = args.folder.strip() if args.folder else None
+    output_folder = args.output_folder.strip()
+
+    exclude_patterns = args.exclude_macro_regex
+
+    if base_folder:
+        return base_folder, exclude_patterns, output_folder
 
     # If no argument provided, ask for input
     while True:
         folder = input("Please enter the path to X4 game folder: ").strip('" ').strip()
         if os.path.isdir(folder):
-            return folder, DEFAULT_EXCLUDE_PATTERNS
+            return folder, DEFAULT_EXCLUDE_PATTERNS, output_folder
         print("Invalid folder path. Please try again.")
 
 def validate_folder_structure(base_folder):
@@ -237,7 +258,7 @@ def validate_folder_structure(base_folder):
 
 def main():
     try:
-        base_folder, exclude_patterns = get_base_folder()
+        base_folder, exclude_patterns, output_folder = get_base_folder()
         libraries_path, t_path = validate_folder_structure(base_folder)
 
         # Find all mapdefaults.xml files
@@ -252,7 +273,7 @@ def main():
 
         # Process mapdefaults.xml files with exclusion patterns
         if mapdefaults_files:
-            process_mapdefaults(mapdefaults_files, name_map, exclude_patterns)
+            process_mapdefaults(mapdefaults_files, name_map, exclude_patterns, output_folder)
 
         logger.info("Processing complete")
 
