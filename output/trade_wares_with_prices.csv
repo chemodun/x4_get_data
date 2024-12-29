@@ -1,0 +1,60 @@
+name,min,max,avg,30% min,30% max,50% min,50% max,70% min,70% max,transport,source
+Advanced Composites,432,648,540,508,572,486,594,464,616,container,original
+Advanced Electronics,710,1318,1014,923,1105,862,1166,801,1227,container,original
+Antimatter Cells,121,282,202,177,226,161,242,145,258,container,original
+Antimatter Converters,248,461,354,323,386,301,408,280,429,container,original
+Claytronics,1734,2346,2040,1948,2132,1887,2193,1826,2254,container,original
+Drone Components,685,1142,914,845,982,799,1028,754,1073,container,original
+Energy Cells,10,22,16,14,18,13,19,12,20,container,original
+Engine Parts,128,237,182,166,199,155,210,144,221,container,original
+Field Coils,247,576,412,362,461,329,494,296,527,container,original
+Food Rations,12,29,20,18,23,16,25,15,26,container,original
+Graphene,100,233,166,147,186,133,200,120,213,container,original
+Helium,37,51,44,42,46,40,48,39,49,liquid,original
+Hull Parts,146,272,209,190,228,178,240,165,253,container,original
+Hydrogen,49,67,58,55,61,54,62,52,64,liquid,original
+Ice,26,35,30,29,32,28,33,27,34,solid,original
+Maja Dust,94,323,208,174,243,151,266,128,289,container,original
+Maja Snails,35,81,58,51,65,46,70,42,74,container,original
+Meat,29,68,48,43,54,39,58,35,62,container,original
+Medical Supplies,43,89,66,59,73,54,78,50,82,container,original
+Methane,41,55,48,46,50,44,52,43,53,liquid,original
+Microchips,805,1090,948,905,990,876,1019,848,1047,container,original
+Missile Components,6,13,10,8,11,8,11,7,12,container,original
+Nividium,434,587,510,488,533,472,549,457,564,solid,original
+Nostrop Oil,20,47,34,29,38,27,40,24,43,container,original
+Ore,43,58,50,48,53,47,54,45,56,solid,original
+Plasma Conductors,769,1282,1026,949,1102,897,1154,846,1205,container,original
+Quantum Tubes,225,375,300,278,322,262,338,248,352,container,original
+Raw Scrap,153,207,180,172,188,166,194,161,199,solid,original
+Refined Metals,89,207,148,130,166,118,178,107,189,container,original
+Scanning Arrays,842,1264,1053,990,1116,948,1158,905,1201,container,original
+Scrap Metal,318,431,374,358,391,346,403,335,414,solid,original
+Shield Components,113,264,188,166,211,151,226,136,241,container,original
+Silicon,111,150,130,125,136,121,140,117,144,solid,original
+Silicon Wafers,180,419,300,264,335,240,359,216,383,container,original
+Smart Chips,46,69,58,54,61,52,63,49,66,container,original
+Soja Beans,40,93,66,59,74,53,80,48,85,container,original
+Soja Husk,19,45,32,28,36,26,38,23,41,container,original
+Spacefuel,60,207,134,111,156,97,170,82,185,container,original
+Spaceweed,75,257,166,139,193,120,212,102,230,container,original
+Spices,12,28,20,18,22,16,24,14,26,container,original
+Sunrise Flowers,48,112,80,70,90,64,96,58,102,container,original
+Superfluid Coolant,90,211,150,132,169,120,181,108,193,container,original
+Swamp Plant,50,117,84,73,94,67,100,60,107,container,original
+Teladianium,121,283,202,178,226,162,242,145,259,container,original
+Turret Components,164,383,274,241,306,219,328,197,350,container,original
+Water,32,74,53,47,59,42,64,38,68,container,original
+Weapon Components,171,399,285,251,319,228,342,205,365,container,original
+Wheat,19,44,32,28,35,25,38,23,40,container,original
+BoFu,61,142,102,89,114,81,122,73,130,container,ego_dlc_boron
+BoGas,44,102,73,64,82,58,88,53,93,container,ego_dlc_boron
+Plankton,11,25,18,16,20,14,22,13,23,container,ego_dlc_boron
+Chelt Meat,31,72,52,45,58,41,62,37,66,container,ego_dlc_split
+Scruffin Fruit,17,40,28,25,32,23,34,20,37,container,ego_dlc_split
+Computronic Substrate,7452,9108,8280,8032,8528,7866,8694,7700,8860,container,ego_dlc_terran
+Metallic Microlattice,42,57,50,47,52,46,53,44,55,container,ego_dlc_terran
+Protein Paste,57,134,96,84,107,76,115,69,122,container,ego_dlc_terran
+Silicon Carbide,1202,1627,1414,1351,1478,1308,1521,1266,1563,container,ego_dlc_terran
+Stimulants,153,527,340,284,396,246,434,209,471,container,ego_dlc_terran
+Terran MRE,32,75,54,47,60,43,64,38,69,container,ego_dlc_terran

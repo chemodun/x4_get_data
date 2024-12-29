@@ -1,0 +1,264 @@
+macro,name,source,type
+Cluster_01_macro,Grand Exchange,original,cluster
+Cluster_01_Sector001_macro,Grand Exchange I,original,sector
+Cluster_01_Sector002_macro,Grand Exchange III,original,sector
+Cluster_01_Sector003_macro,Grand Exchange IV,original,sector
+Cluster_02_macro,Eighteen Billion,original,cluster
+Cluster_02_Sector001_macro,Eighteen Billion,original,sector
+Cluster_03_macro,Memory of Profit,original,cluster
+Cluster_03_Sector001_macro,Memory of Profit IX,original,sector
+Cluster_04_macro,Nopileos' Fortune,original,cluster
+Cluster_04_Sector001_macro,Nopileos' Fortune II,original,sector
+Cluster_04_Sector002_macro,Nopileos' Fortune VI,original,sector
+Cluster_05_macro,Path to Profit,original,cluster
+Cluster_05_Sector001_macro,Path to Profit,original,sector
+Cluster_06_macro,Black Hole Sun,original,cluster
+Cluster_06_Sector001_macro,Black Hole Sun IV,original,sector
+Cluster_06_Sector002_macro,Black Hole Sun V,original,sector
+Cluster_07_macro,The Reach,original,cluster
+Cluster_07_Sector001_macro,The Reach,original,sector
+Cluster_08_macro,Silent Witness,original,cluster
+Cluster_08_Sector001_macro,Silent Witness I,original,sector
+Cluster_09_macro,Bright Promise,original,cluster
+Cluster_09_Sector001_macro,Bright Promise,original,sector
+Cluster_10_macro,Unholy Retribution,original,cluster
+Cluster_10_Sector001_macro,Unholy Retribution,original,sector
+Cluster_11_macro,Pontifex's Claim,original,cluster
+Cluster_11_Sector001_macro,Pontifex's Claim,original,sector
+Cluster_12_macro,True Sight,original,cluster
+Cluster_12_Sector001_macro,True Sight,original,sector
+Cluster_13_macro,Second Contact,original,cluster
+Cluster_13_Sector001_macro,Second Contact II Flashpoint,original,sector
+Cluster_14_macro,Argon Prime,original,cluster
+Cluster_14_Sector001_macro,Argon Prime,original,sector
+Cluster_15_macro,Ianamus Zura,original,cluster
+Cluster_15_Sector001_macro,Ianamus Zura IV,original,sector
+Cluster_15_Sector002_macro,Ianamus Zura VII,original,sector
+Cluster_16_macro,Matrix #451,original,cluster
+Cluster_16_Sector001_macro,Matrix #451,original,sector
+Cluster_17_macro,Matrix #9,original,cluster
+Cluster_17_Sector001_macro,Matrix #9,original,sector
+Cluster_18_macro,Trinity Sanctum,original,cluster
+Cluster_18_Sector001_macro,Trinity Sanctum III,original,sector
+Cluster_19_macro,Hewa's Twin,original,cluster
+Cluster_19_Sector001_macro,Hewa's Twin I,original,sector
+Cluster_19_Sector002_macro,Hewa's Twin II,original,sector
+Cluster_20_macro,Company Regard,original,cluster
+Cluster_20_Sector001_macro,Company Regard,original,sector
+Cluster_21_macro,Scale Plate Green,original,cluster
+Cluster_21_Sector001_macro,Scale Plate Green I,original,sector
+Cluster_21_Sector002_macro,Scale Plate Green VII,original,sector
+Cluster_22_macro,Pious Mists,original,cluster
+Cluster_22_Sector001_macro,Pious Mists II,original,sector
+Cluster_23_macro,Sacred Relic,original,cluster
+Cluster_23_Sector001_macro,Sacred Relic,original,sector
+Cluster_24_macro,Holy Vision,original,cluster
+Cluster_24_Sector001_macro,Holy Vision,original,sector
+Cluster_25_macro,Faulty Logic,original,cluster
+Cluster_25_Sector001_macro,Faulty Logic I,original,sector
+Cluster_25_Sector002_macro,Faulty Logic VII,original,sector
+Cluster_26_macro,Atiya's Misfortune,original,cluster
+Cluster_26_Sector001_macro,Atiya's Misfortune I,original,sector
+Cluster_26_Sector002_macro,Atiya's Misfortune III,original,sector
+Cluster_27_macro,The Void,original,cluster
+Cluster_27_Sector001_macro,The Void,original,sector
+Cluster_28_macro,Antigone Memorial,original,cluster
+Cluster_28_Sector001_macro,Antigone Memorial,original,sector
+Cluster_29_macro,Hatikvah's Choice,original,cluster
+Cluster_29_Sector001_macro,Hatikvah's Choice I,original,sector
+Cluster_29_Sector002_macro,Hatikvah's Choice III,original,sector
+Cluster_30_macro,Morning Star,original,cluster
+Cluster_30_Sector001_macro,Morning Star III,original,sector
+Cluster_31_macro,Heretic's End,original,cluster
+Cluster_31_Sector001_macro,Heretic's End,original,sector
+Cluster_32_macro,Tharka's Cascade,original,cluster
+Cluster_32_Sector001_macro,Tharka's Cascade XV,original,sector
+Cluster_32_Sector002_macro,Tharka's Cascade XVII,original,sector
+Cluster_33_macro,Matrix #79B,original,cluster
+Cluster_33_Sector001_macro,Matrix #79B,original,sector
+Cluster_34_macro,Profit Center Alpha,original,cluster
+Cluster_34_Sector001_macro,Profit Center Alpha,original,sector
+Cluster_35_macro,Lasting Vengeance,original,cluster
+Cluster_35_Sector001_macro,Lasting Vengeance,original,sector
+Cluster_36_macro,Cardinal's Redress,original,cluster
+Cluster_36_Sector001_macro,Cardinal's Redress,original,sector
+Cluster_37_macro,Pious Mists,original,cluster
+Cluster_37_Sector001_macro,Pious Mists IV,original,sector
+Cluster_38_macro,Pious Mists,original,cluster
+Cluster_38_Sector001_macro,Pious Mists XI,original,sector
+Cluster_39_macro,Memory of Profit,original,cluster
+Cluster_39_Sector001_macro,Memory of Profit X,original,sector
+Cluster_40_macro,Second Contact,original,cluster
+Cluster_40_Sector001_macro,Second Contact VII,original,sector
+Cluster_41_macro,Second Contact,original,cluster
+Cluster_41_Sector001_macro,Second Contact XI,original,sector
+Cluster_42_macro,Hewa's Twin,original,cluster
+Cluster_42_Sector001_macro,Hewa's Twin III,original,sector
+Cluster_42_Sector002_macro,Hewa's Twin IV The Cove,original,sector
+Cluster_43_macro,Hewa's Twin,original,cluster
+Cluster_43_Sector001_macro,Hewa's Twin V,original,sector
+Cluster_44_macro,Silent Witness,original,cluster
+Cluster_44_Sector001_macro,Silent Witness XI,original,sector
+Cluster_45_macro,Silent Witness,original,cluster
+Cluster_45_Sector001_macro,Silent Witness XII,original,sector
+Cluster_46_macro,Morning Star,original,cluster
+Cluster_46_Sector001_macro,Morning Star IV,original,sector
+Cluster_47_macro,Trinity Sanctum,original,cluster
+Cluster_47_Sector001_macro,Trinity Sanctum VII,original,sector
+Cluster_48_macro,Getsu Fune,original,cluster
+Cluster_48_Sector001_macro,Getsu Fune,original,sector
+Cluster_49_macro,Frontier Edge,original,cluster
+Cluster_49_Sector001_macro,Frontier Edge,original,sector
+Cluster_50_macro,Turquoise Sea,original,cluster
+Cluster_50_Sector001_macro,Turquoise Sea IX,original,sector
+Cluster_50_Sector002_macro,Turquoise Sea X,original,sector
+Cluster_100_macro,Sol,ego_dlc_terran,cluster
+Cluster_100_Sector001_macro,Asteroid Belt,ego_dlc_terran,sector
+Cluster_101_macro,Sol,ego_dlc_terran,cluster
+Cluster_101_Sector001_macro,Mars,ego_dlc_terran,sector
+Cluster_102_macro,Sol,ego_dlc_terran,cluster
+Cluster_102_Sector001_macro,Venus,ego_dlc_terran,sector
+Cluster_104_macro,Sol,ego_dlc_terran,cluster
+Cluster_104_Sector001_macro,Earth,ego_dlc_terran,sector
+Cluster_104_Sector002_macro,The Moon,ego_dlc_terran,sector
+Cluster_106_macro,Sol,ego_dlc_terran,cluster
+Cluster_106_Sector001_macro,Mercury,ego_dlc_terran,sector
+Cluster_107_macro,Sol,ego_dlc_terran,cluster
+Cluster_107_Sector001_macro,Jupiter,ego_dlc_terran,sector
+Cluster_108_macro,Sol,ego_dlc_terran,cluster
+Cluster_108_Sector001_macro,Saturn 1,ego_dlc_terran,sector
+Cluster_108_Sector002_macro,Titan,ego_dlc_terran,sector
+Cluster_108_Sector003_macro,Saturn 2,ego_dlc_terran,sector
+Cluster_109_macro,Sol,ego_dlc_terran,cluster
+Cluster_109_Sector001_macro,Uranus,ego_dlc_terran,sector
+Cluster_110_macro,Sol,ego_dlc_terran,cluster
+Cluster_110_Sector001_macro,Neptune,ego_dlc_terran,sector
+Cluster_111_macro,Sol,ego_dlc_terran,cluster
+Cluster_111_Sector001_macro,Pluto,ego_dlc_terran,sector
+Cluster_112_macro,Savage Spur,ego_dlc_terran,cluster
+Cluster_112_Sector001_macro,Savage Spur I,ego_dlc_terran,sector
+Cluster_112_Sector002_macro,Savage Spur II,ego_dlc_terran,sector
+Cluster_113_macro,Segaris,ego_dlc_terran,cluster
+Cluster_113_Sector001_macro,Segaris,ego_dlc_terran,sector
+Cluster_114_macro,Gaian Prophecy,ego_dlc_terran,cluster
+Cluster_114_Sector001_macro,Gaian Prophecy,ego_dlc_terran,sector
+Cluster_115_macro,Brennan's Triumph,ego_dlc_terran,cluster
+Cluster_115_Sector001_macro,Brennan's Triumph,ego_dlc_terran,sector
+Cluster_116_macro,Sol,ego_dlc_terran,cluster
+Cluster_116_Sector001_macro,Oort Cloud,ego_dlc_terran,sector
+Cluster_400_macro,Wretched Skies,ego_dlc_split,cluster
+Cluster_400_Sector001_macro,Wretched Skies IV Family Valka,ego_dlc_split,sector
+Cluster_401_macro,Family Zhin,ego_dlc_split,cluster
+Cluster_401_Sector001_macro,Family Zhin,ego_dlc_split,sector
+Cluster_402_macro,Family Kritt,ego_dlc_split,cluster
+Cluster_402_Sector001_macro,Family Kritt,ego_dlc_split,sector
+Cluster_403_macro,Wretched Skies,ego_dlc_split,cluster
+Cluster_403_Sector001_macro,Wretched Skies V Family Phi,ego_dlc_split,sector
+Cluster_404_macro,Zyarth's Dominion,ego_dlc_split,cluster
+Cluster_404_Sector001_macro,Zyarth's Dominion I,ego_dlc_split,sector
+Cluster_405_macro,Zyarth's Dominion,ego_dlc_split,cluster
+Cluster_405_Sector001_macro,Zyarth's Dominion IV,ego_dlc_split,sector
+Cluster_406_macro,Zyarth's Dominion,ego_dlc_split,cluster
+Cluster_406_Sector001_macro,Zyarth's Dominion X,ego_dlc_split,sector
+Cluster_407_macro,Family Tkr,ego_dlc_split,cluster
+Cluster_407_Sector001_macro,Family Tkr,ego_dlc_split,sector
+Cluster_408_macro,Thuruk's Demise,ego_dlc_split,cluster
+Cluster_408_Sector001_macro,Thuruk's Demise III,ego_dlc_split,sector
+Cluster_408_Sector002_macro,Thuruk's Demise II First Impact,ego_dlc_split,sector
+Cluster_409_macro,Tharka's Ravine,ego_dlc_split,cluster
+Cluster_409_Sector001_macro,Tharka's Ravine XXIV,ego_dlc_split,sector
+Cluster_410_macro,Tharka's Ravine,ego_dlc_split,cluster
+Cluster_410_Sector001_macro,Tharka's Ravine XVI,ego_dlc_split,sector
+Cluster_411_macro,Heart of Acrimony,ego_dlc_split,cluster
+Cluster_411_Sector001_macro,Heart of Acrimony II,ego_dlc_split,sector
+Cluster_412_macro,Tharka's Ravine,ego_dlc_split,cluster
+Cluster_412_Sector001_macro,Tharka's Ravine VIII,ego_dlc_split,sector
+Cluster_413_macro,Tharka's Ravine,ego_dlc_split,cluster
+Cluster_413_Sector001_macro,Tharka's Ravine IV Tharka's Fall,ego_dlc_split,sector
+Cluster_414_macro,Rhy's Defiance,ego_dlc_split,cluster
+Cluster_414_Sector001_macro,Rhy's Defiance,ego_dlc_split,sector
+Cluster_415_macro,Matrix #598,ego_dlc_split,cluster
+Cluster_415_Sector001_macro,Matrix #598,ego_dlc_split,sector
+Cluster_416_macro,Guiding Star,ego_dlc_split,cluster
+Cluster_416_Sector001_macro,Guiding Star V,ego_dlc_split,sector
+Cluster_416_Sector002_macro,Guiding Star VII,ego_dlc_split,sector
+Cluster_417_macro,Eleventh Hour,ego_dlc_split,cluster
+Cluster_417_Sector001_macro,Eleventh Hour,ego_dlc_split,sector
+Cluster_418_macro,Family Nhuut,ego_dlc_split,cluster
+Cluster_418_Sector001_macro,Family Nhuut,ego_dlc_split,sector
+Cluster_419_macro,Open Market,ego_dlc_split,cluster
+Cluster_419_Sector001_macro,Open Market,ego_dlc_split,sector
+Cluster_420_macro,Two Grand,ego_dlc_split,cluster
+Cluster_420_Sector001_macro,Two Grand,ego_dlc_split,sector
+Cluster_421_macro,Fires of Defeat,ego_dlc_split,cluster
+Cluster_421_Sector001_macro,Fires of Defeat,ego_dlc_split,sector
+Cluster_422_macro,Wretched Skies,ego_dlc_split,cluster
+Cluster_422_Sector001_macro,Wretched Skies X,ego_dlc_split,sector
+Cluster_423_macro,Litany of Fury,ego_dlc_split,cluster
+Cluster_423_Sector001_macro,Litany of Fury IX,ego_dlc_split,sector
+Cluster_423_Sector002_macro,Litany of Fury XII,ego_dlc_split,sector
+Cluster_424_macro,Emperor's Pride,ego_dlc_split,cluster
+Cluster_424_Sector001_macro,Emperor's Pride IV,ego_dlc_split,sector
+Cluster_424_Sector002_macro,Emperor's Pride VI,ego_dlc_split,sector
+Cluster_425_macro,Heart of Acrimony,ego_dlc_split,cluster
+Cluster_425_Sector001_macro,Heart of Acrimony I The Boneyard,ego_dlc_split,sector
+Cluster_500_macro,Avarice,ego_dlc_pirate,cluster
+Cluster_500_Sector001_macro,Avarice I,ego_dlc_pirate,sector
+Cluster_500_Sector002_macro,Avarice V Dead End,ego_dlc_pirate,sector
+Cluster_500_Sector003_macro,Avarice IV,ego_dlc_pirate,sector
+Cluster_501_macro,Windfall,ego_dlc_pirate,cluster
+Cluster_501_Sector001_macro,Windfall I Union Summit,ego_dlc_pirate,sector
+Cluster_502_macro,Windfall,ego_dlc_pirate,cluster
+Cluster_502_Sector001_macro,Windfall III The Hoard,ego_dlc_pirate,sector
+Cluster_503_macro,Windfall,ego_dlc_pirate,cluster
+Cluster_503_Sector001_macro,Windfall IV Aurora's Dream,ego_dlc_pirate,sector
+Cluster_504_macro,Unknown System,ego_dlc_pirate,cluster
+Cluster_504_Sector001_macro,Unknown System,ego_dlc_pirate,sector
+Cluster_601_macro,Watchful Gaze,ego_dlc_boron,cluster
+Cluster_601_Sector001_macro,Watchful Gaze,ego_dlc_boron,sector
+Cluster_602_macro,Barren Shores,ego_dlc_boron,cluster
+Cluster_602_Sector001_macro,Barren Shores,ego_dlc_boron,sector
+Cluster_603_macro,Great Reef,ego_dlc_boron,cluster
+Cluster_603_Sector001_macro,Great Reef,ego_dlc_boron,sector
+Cluster_604_macro,Ocean of Fantasy,ego_dlc_boron,cluster
+Cluster_604_Sector001_macro,Ocean of Fantasy,ego_dlc_boron,sector
+Cluster_605_macro,Sanctuary of Darkness,ego_dlc_boron,cluster
+Cluster_605_Sector001_macro,Sanctuary of Darkness,ego_dlc_boron,sector
+Cluster_606_macro,Kingdom End,ego_dlc_boron,cluster
+Cluster_606_Sector001_macro,Kingdom End I,ego_dlc_boron,sector
+Cluster_606_Sector002_macro,Reflected Stars,ego_dlc_boron,sector
+Cluster_606_Sector003_macro,Towering Wave,ego_dlc_boron,sector
+Cluster_607_macro,Rolk's Demise,ego_dlc_boron,cluster
+Cluster_607_Sector001_macro,Rolk's Demise,ego_dlc_boron,sector
+Cluster_608_macro,Atreus' Clouds,ego_dlc_boron,cluster
+Cluster_608_Sector001_macro,Atreus' Clouds,ego_dlc_boron,sector
+Cluster_609_macro,Menelaus' Oasis,ego_dlc_boron,cluster
+Cluster_609_Sector001_macro,Menelaus' Oasis,ego_dlc_boron,sector
+cluster_701_macro,Mitsuno's Remembrance,ego_dlc_timelines,cluster
+cluster_701_Sector001_macro,Mitsuno's Revelation,ego_dlc_timelines,sector
+cluster_702_macro,Mitsuno's Remembrance,ego_dlc_timelines,cluster
+cluster_702_Sector001_macro,Mitsuno's Defiance,ego_dlc_timelines,sector
+cluster_703_macro,Mitsuno's Remembrance,ego_dlc_timelines,cluster
+cluster_703_Sector001_macro,Mitsuno's Sacrifice,ego_dlc_timelines,sector
+cluster_704_macro,President's End,ego_dlc_timelines,cluster
+cluster_704_Sector001_macro,President's End,ego_dlc_timelines,sector
+cluster_705_macro,Nopileos' Memorial,ego_dlc_timelines,cluster
+cluster_705_Sector001_macro,Nopileos' Memorial,ego_dlc_timelines,sector
+cluster_706_macro,Hatikvah's Faith,ego_dlc_timelines,cluster
+cluster_706_Sector001_macro,Hatikvah's Faith,ego_dlc_timelines,sector
+cluster_708_macro,Matrix #101,ego_dlc_timelines,cluster
+cluster_708_Sector001_macro,Matrix #101,ego_dlc_timelines,sector
+cluster_709_macro,Cardinal's Domain,original,cluster
+cluster_709_Sector001_macro,Cardinal's Domain,original,sector
+cluster_710_macro,Moo-Kye's Revenge,original,cluster
+cluster_710_Sector001_macro,Moo-Kye's Revenge,original,sector
+cluster_711_macro,Mi Ton's Refuge,original,cluster
+cluster_711_Sector001_macro,Mi Ton's Refuge,original,sector
+cluster_712_macro,Loomanckstrat's Legacy,original,cluster
+cluster_712_Sector001_macro,Loomanckstrat's Legacy,original,sector
+cluster_713_macro,CEO's Doubt,original,cluster
+cluster_713_Sector001_macro,CEO's Doubt,original,sector
+cluster_714_macro,Freedom's Reach,original,cluster
+cluster_714_Sector001_macro,Freedom's Reach,original,sector
+cluster_715_macro,Mists of Artemis,original,cluster
+cluster_715_Sector001_macro,Mists of Artemis,original,sector

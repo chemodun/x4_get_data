@@ -1,0 +1,33 @@
+id,name,shortname,prefixname,spacename,homespacename,primaryrace,source
+player,Player,PL,,,,,original
+alliance,Alliance of the Word,ALI,Alliance,Alliance Space,Alliance Home System,paranid,original
+antigone,Antigone Republic,ANT,Republic,Republic Space,Republic Home System,argon,original
+argon,Argon Federation,ARG,Federation,Federation Space,Federation Home System,argon,original
+buccaneers,Duke's Buccaneers,BUC,Duke's,Duke's Space,Duke's Home System,paranid,original
+civilian,Civilian,,Civilian,,,,original
+criminal,Criminal,,Criminal,,,,original
+hatikvah,Hatikvah Free League,HAT,Free League,Free League Space,Free League Home System,argon,original
+holyorder,Holy Order of the Pontifex,HOP,Holy Order,Holy Order Space,Holy Order Home System,paranid,original
+holyorderfanatic,Holy Order Faithful,HOF,Faithful,Faithful Space,Faithful Home System,paranid,original
+khaak,Kha'ak,KHK,Kha'ak,Kha'ak Space,Kha'ak Home System,khaak,original
+ministry,Ministry of Finance,MIN,Ministry,Ministry Space,Ministry Home System,teladi,original
+ownerless,,,,,,,original
+paranid,Godrealm of the Paranid,PAR,Godrealm,Godrealm Space,Godrealm Home System,paranid,original
+scaleplate,Scale Plate Pact,SCA,Pact,Pact Space,Pact Home System,teladi,original
+smuggler,Criminal,,Criminal,,,,original
+teladi,Teladi Company,TEL,Company,Company Space,Company Home System,teladi,original
+trinity,Realm of the Trinity,TRI,Trinity,Trinity Space,Trinity Home System,paranid,original
+visitor,Visitor,,Visitor,,,,original
+xenon,Xenon,XEN,Xenon,Xenon Space,Xenon Home System,xenon,original
+boron,Queendom of Boron,BOR,Boron,Boron Space,Boron Home System,boron,ego_dlc_boron
+loanshark,Vigor Syndicate,VIG,Syndicate,Syndicate Space,Syndicate Home System,argon,ego_dlc_pirate
+scavenger,Riptide Rakers,RIP,Rakers,Rakers Space,Rakers Home System,argon,ego_dlc_pirate
+court,Court of Curbs,CUB,Court,Free League Space,Free League Home System,split,ego_dlc_split
+fallensplit,Fallen Families,FAF,Fallen Split,Fallen Split Space,Fallen Split Home System,split,ego_dlc_split
+freesplit,Free Families,FRF,Free Split,Free Split Space,Free Split Home System,split,ego_dlc_split
+split,Zyarth Patriarchy,ZYA,Patriarchy,Patriarchy Space,Patriarchy Home System,split,ego_dlc_split
+pioneers,Segaris Pioneers,PIO,Pioneers,Pioneers Space,Pioneers Home System,terran,ego_dlc_terran
+terran,Terran Protectorate,TER,Protectorate,Protectorate Space,Protectorate Home System,terran,ego_dlc_terran
+yaki,Yaki,YAK,Yaki,Yaki Space,Yaki Home System,argon,ego_dlc_terran
+terran,Terran Protectorate,TER,Protectorate,Protectorate Space,Protectorate Home System,terran,ego_dlc_timelines
+kaori,Quettanauts,QUE,Quettanauts,Quettanauts Space,Quettanauts Home System,argon,ego_dlc_timelines
